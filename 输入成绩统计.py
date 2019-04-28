@@ -26,5 +26,3 @@ while endFlag.lower() == 'yes':
     endFlag = input('Do you want to input your score one more time?(yes or no?): ')
 
 print('The sum of the scores is: ', s)
-
-
