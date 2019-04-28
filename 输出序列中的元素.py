@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 a = ['a', 'b', 'apple', 'z', 'example', 'dcpeng']
+
 for i in range(len(a)):
     print(a[i])
 
