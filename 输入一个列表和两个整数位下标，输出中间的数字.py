@@ -17,4 +17,3 @@ if b < len(a) and c < len(a):
         print('error!! b must be small to c')
 else:
     print('The number is out of list! Please input your number again.')
-
