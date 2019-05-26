@@ -1,0 +1,34 @@
+# -*- coding:utf-8 -*-
+import collections
+
+s = input('Please input your words: ')
+lis = s.split()
+
+counter = collections.Counter(lis)
+result_word = [(word, nums) for word, nums in counter.items()]
+result_word.sort(key=lambda x: len(x[0]))
+
+print(result_word)
+print('----------------------')
+
+# 以上代码的出处
+# 作者：张文迪
+# 链接：https://www.zhihu.com/question/326120799/answer/695272603
+# 来源：知乎
+# 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+
+def count_letter(word, dic):
+    d = dic
+    for i in word:
+        d[i] = d.get(i, 0) + 1
+    return d
+
+d = dict()
+for i in range(len(s)):
+    count_letter(s[i], d)
+print(d)
+
+d = sorted(d.items(), key=lambda x: x[1])
+print(d)
+
+# 以上代码主要参考出处：https://www.jb51.net/article/155502.htm
