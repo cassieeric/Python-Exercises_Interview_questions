@@ -1,2 +1,2 @@
 # Introduction
-这个文件夹主要放一些简单的应用题及其实现
+This folder is mainly used to store simple practise and its related relization.
